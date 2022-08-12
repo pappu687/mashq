@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initi al-scale=1, shrink-to-fit=no">
+	<meta name="description" content="App for Quran Mashq, Tajweed correction">
+
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link rel="shortcut icon" href="img/icons/icon-48x48.png" />
+
+	<title>Quran Mashq</title>
+
+	<link href="css/app.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+	<div class="wrapper">
+		<input type="hidden" name="color-fitler" value="normal" />
+		<nav id="sidebar" class="sidebar js-sidebar">
+			<div class="sidebar-content js-simplebar">
+				<a class="sidebar-brand" href="index.html">
+					Quran Mashq</span>
+				</a>
+
+				<ul class="sidebar-nav">
+					<li class="sidebar-header">
+						Surahs
+					</li>
+					<li class="sidebar-item"><a class="sidebar-link" data-right-panel-img="/img/surahs/surah-1.png"
+							data-content-id="1" href="#">1. Al-Fatiha</a></li>
+					<li class="sidebar-item"><a class="sidebar-link" data-right-panel-img="/img/surahs/surah-114.png"
+							data-content-id="114" href="#">114. An-Nas</a></li>
+					<li class="sidebar-item"><a class="sidebar-link" data-right-panel-img="/img/surahs/surah-113.png"
+							data-content-id="113" href="#">113. Al-Falaq</a></li>
+					<li class="sidebar-item"><a class="sidebar-link" data-right-panel-img="/img/surahs/surah-112.png"
+							data-content-id="112" href="#">112. Al-Ikhlas</a></li>
+					<li class="sidebar-item"><a class="sidebar-link" data-right-panel-img="/img/surahs/surah-111.png"
+							data-content-id="111" href="#">111. Al-Masad</a></li>
+					<li class="sidebar-item"><a class="sidebar-link" data-right-panel-img="/img/surahs/surah-110.png"
+							data-content-id="110" href="#">110. An-Nasr</a></li>
+					<li class="sidebar-item"><a class="sidebar-link" data-right-panel-img="/img/surahs/surah-109.png"
+							data-content-id="109" href="#">109. Al-Kafirun</a></li>
+					<li class="sidebar-item"><a class="sidebar-link" data-right-panel-img="/img/surahs/surah-108.png"
+							data-content-id="108" href="#">108. Al-Kawthar</a></li>
+					<li class="sidebar-item"><a class="sidebar-link" data-right-panel-img="/img/surahs/surah-107.png"
+							data-content-id="107" href="#">107. Al-Ma&lsquo;un</a></li>
+					<li class="sidebar-item"><a class="sidebar-link" data-right-panel-img="/img/surahs/surah-106.png"
+							data-content-id="106" href="#">106. Quraysh</a></li>
+					<li class="sidebar-item"><a class="sidebar-link" data-right-panel-img="/img/surahs/surah-105.png"
+							data-content-id="105" href="#">105. Al-Fil</a></li>
+					<li class="sidebar-item"><a class="sidebar-link" data-right-panel-img="/img/surahs/surah-104.png"
+							data-content-id="104" href="#">104. Al-Humazah</a></li>
+					<li class="sidebar-item"><a class="sidebar-link" data-right-panel-img="/img/surahs/surah-103.png"
+							data-content-id="103" href="#">103. Al-&lsquo;Asr</a></li>
+					<li class="sidebar-item"><a class="sidebar-link" data-right-panel-img="/img/surahs/surah-102.png"
+							data-content-id="102" href="#">102. At-Takathur</a></li>
+					<li class="sidebar-item"><a class="sidebar-link" data-right-panel-img="/img/surahs/surah-101.png"
+							data-content-id="101" href="#">101. Al-Qari&lsquo;ah</a></li>
+					<li class="sidebar-item"><a class="sidebar-link" data-right-panel-img="/img/surahs/surah-100.png"
+							data-content-id="100" href="#">100. Al-&lsquo;Adiyat</a></li>
+					<li class="sidebar-item"><a class="sidebar-link" data-right-panel-img="/img/surahs/surah-99.png"
+							data-content-id="99" href="#">99. Az-Zalzalah</a></li>
+					<li class="sidebar-item"><a class="sidebar-link" data-right-panel-img="/img/surahs/surah-98.png"
+							data-content-id="98" href="#">98. Al-Bayyinah</a></li>
+					<li class="sidebar-item"><a class="sidebar-link" data-right-panel-img="/img/surahs/surah-97.png"
+							data-content-id="97" href="#">97. Al-Qadr</a></li>
+					<li class="sidebar-item"><a class="sidebar-link" data-right-panel-img="/img/surahs/surah-96.png"
+							data-content-id="96" href="#">96. Al-&lsquo;Alaq</a></li>
+					<li class="sidebar-item"><a class="sidebar-link" data-right-panel-img="/img/surahs/surah-95.png"
+							data-content-id="95" href="#">95. At-Tin</a></li>
+					<li class="sidebar-item"><a class="sidebar-link" data-right-panel-img="/img/surahs/surah-94.png"
+							data-content-id="94" href="#">94. Ash-Sharh</a></li>
+					<li class="sidebar-item"><a class="sidebar-link" data-right-panel-img="/img/surahs/surah-93.png"
+							data-content-id="93" href="#">93. Ad-Duhaa</a></li>
+					<li class="sidebar-item"><a class="sidebar-link" data-right-panel-img="/img/surahs/surah-92.png"
+							data-content-id="92" href="#">92. Al-Layl</a></li>
+					<li class="sidebar-item"><a class="sidebar-link" data-right-panel-img="/img/surahs/surah-91.png"
+							data-content-id="91" href="#">91. Ash-Shams</a></li>
+					<li class="sidebar-item"><a class="sidebar-link" data-right-panel-img="/img/surahs/surah-90.png"
+							data-content-id="90" href="#">90. Al-Balad</a></li>
+					<li class="sidebar-item"><a class="sidebar-link" data-right-panel-img="/img/surahs/surah-89.png"
+							data-content-id="89" href="#">89. Al-Fajr</a></li>
+					<li class="sidebar-item"><a class="sidebar-link" data-right-panel-img="/img/surahs/surah-88.png"
+							data-content-id="88" href="#">88. Al-Ghashiyah</a></li>
+					<li class="sidebar-item"><a class="sidebar-link" data-right-panel-img="/img/surahs/surah-87.png"
+							data-content-id="87" href="#">87. Al-A&lsquo;la</a></li>
+					<li class="sidebar-item"><a class="sidebar-link" data-right-panel-img="/img/surahs/surah-86.png"
+							data-content-id="86" href="#">86.At-Tariq</a></li>
+					<li class="sidebar-item"><a class="sidebar-link" data-right-panel-img="/img/surahs/surah-85.png"
+							data-content-id="85" href="#">85. Al-Buruj</a></li>
+					<li class="sidebar-item"><a class="sidebar-link" data-right-panel-img="/img/surahs/surah-84.png"
+							data-content-id="84" href="#">84. Al-Inshiqaq</a></li>
+					<li class="sidebar-item"><a class="sidebar-link" data-right-panel-img="/img/surahs/surah-83.png"
+							data-content-id="83" href="#">83. Al-Mutaffifin</a></li>
+					<li class="sidebar-item"><a class="sidebar-link" data-right-panel-img="/img/surahs/surah-82.png"
+							data-content-id="82" href="#">82. Al-Infitar</a></li>
+					<li class="sidebar-item"><a class="sidebar-link" data-right-panel-img="/img/surahs/surah-81.png"
+							data-content-id="81" href="#">81. At-Takwir</a></li>
+					<li class="sidebar-item"><a class="sidebar-link" data-right-panel-img="/img/surahs/surah-80.png"
+							data-content-id="80" href="#">80. Abasa</a></li>
+
+					<li class="sidebar-header">
+						Tajweed
+					</li>
+
+					<li class="sidebar-item"><a class="sidebar-link" href="#">ইকফা হরফ</a></li>
+					<li class="sidebar-item"><a class="sidebar-link" href="#">ইজহার এর হরফ</a></li>
+					<li class="sidebar-item"><a class="sidebar-link" href="#">ক্বলক্বলার হরফ</a></li>
+					<li class="sidebar-item"><a class="sidebar-link" href="#">নুন সাকিন</a></li>
+					<li class="sidebar-item"><a class="sidebar-link" href="#">মিম সাকিন</a></li>
+					<li class="sidebar-item"><a class="sidebar-link" href="#">র সাকিন</a></li>
+					<li class="sidebar-item"><a class="sidebar-link" href="#">মাদের আলোচনা</a></li>
+
+				</ul>
+
+			</div>
+		</nav>
+
+		<div class="main">
+			<nav class="navbar navbar-expand navbar-light navbar-bg d-flex justify-content-center">
+				<a class="sidebar-toggle js-sidebar-toggle">
+					<i class="hamburger align-self-center"></i>
+				</a>
+
+				<div class="navbar-collapse collapse">
+					<ul class="navbar-nav navbar-align">
+						<form class="d-flex">
+							<div class="row">
+								<div class="col">
+									<div class="form-check form-switch pt-2">
+										<input class="form-check-input" type="checkbox" role="switch"
+											id="showAnnotations" />
+										<label class="form-check-label" for="showAnntations">Annotations</label>
+									</div>
+								</div>
+								<div class="col">
+									<div class="input-group">
+										<input type="text" class="form-control typeahead" placeholder="Search ..."
+											id="searchbox">
+										<div class="input-group-append">
+											<span class="input-group-text" id="basic-addon2">/</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</form>
+					</ul>
+				</div>
+			</nav>
+
+			<main class="content">
+				<div class="container-fluid p-0">
+					<div class="row">
+						<div class="col d-inline-flex justify-content-center">
+							<div class="card right-panel-card d-none">
+								<div class="card-header">
+									<h1 class="h3 mb-0 d-inline-flex justify-content-center page-header"></h1>
+								</div>
+								<div class="card-body pt-0 content-panel">
+									<img src="/img/1px.png" alt="Surah" id="right-panel-img" />
+									<div class="annotations-container">
+
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</main>
+		</div>
+	</div>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/typeahead.js/0.10.3/typeahead.bundle.min.js"></script>-->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.devbridge-autocomplete/1.4.11/jquery.autocomplete.min.js"
+		integrity="sha512-uxCwHf1pRwBJvURAMD/Gg0Kz2F2BymQyXDlTqnayuRyBFE7cisFCh2dSb1HIumZCRHuZikgeqXm8ruUoaxk5tA=="
+		crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script src="js/app.js"></script>
+	<script src="js/jquery.hotkeys.js"></script>
+	<script>
+		(function ($) {
+			var annotations = [];
+			var autocomplete_db = [];
+
+			function clearAnnotations(clearArray) {
+				clearArray = clearArray || false;
+				if (clearArray) {
+					annotations = [];
+				}
+				$('.annotations-container').html('');
+			}
+
+			function navigateLastVisited() {
+				var last_item = window.localStorage.getItem("last_item");
+
+				if (last_item === null) {
+					last_item = 1;
+				}
+				setTimeout(function () {
+					$("[data-content-id=" + last_item + "]").trigger("click");
+					$(".right-panel-card").removeClass("d-none");
+				}, 100);
+			}
+
+			function saveLinkInStorage(element) {
+				var selected_element = $(element.target).closest('.sidebar-link');
+				window.localStorage.setItem("last_item", selected_element.data("content-id"));
+			}
+
+			function init_autocomplete_db() {
+				$(".sidebar-link").each(function () {
+					autocomplete_db.push({
+						value: $(this).text().substr($(this).text().indexOf(".") + 1).trim(),
+						data: $(this).data("content-id")
+					});
+				});
+				$('.typeahead').devbridgeAutocomplete({
+					lookup: autocomplete_db,
+					onSelect: function (suggestion) {
+						$('.typeahead').blur();
+						$("[data-content-id=" + suggestion.data + "]").click()
+					}
+				});
+			}
+
+			function plotAnnotations() {
+				var img_position = $("#right-panel-img").position();
+				clearAnnotations();
+				annotations.map(function (v, i) {
+					var annotate_left = img_position.left + v[0] - 10;
+					var annotate_top = img_position.top + v[1] - 15;
+					$('.annotations-container').append(
+						'<div class="annotations" style="top:' + annotate_top + 'px; left:' +
+						annotate_left + 'px">' +
+						'	<span class="actividad-number-circle pulsate"></span>' +
+						'	<span class="actividad-number-circle ">' + (i + 1) + '</span>' +
+						'</div>'
+					)
+				})
+			}
+			$(document).ready(function () {
+				navigateLastVisited();				
+				init_autocomplete_db();
+				$("#showAnnotations").on("change", function () {
+					if($("#showAnnotations").is(':checked')){
+						plotAnnotations();
+					}else{
+						clearAnnotations();
+					}
+				})
+				$(document).bind('keydown', 'alt+f7', function () {
+					if ($('[name=color-fitler]').val() == "normal") {
+						$("#right-panel-img").addClass("greyscale");
+						$('[name=color-fitler]').val('grey');
+					} else {
+						$("#right-panel-img").removeClass("greyscale");
+						$('[name=color-fitler]').val('normal');
+					}
+				});
+				$(document).bind('keydown', 'alt+f9', function () {
+					$("#showAnnotations").click();
+				});
+				$(document).bind('keydown', 'ctrl+/', function () {
+					$('.typeahead').focus()
+				});
+				$(document).bind('keydown', 'ctrl+k', function () {
+					$(".sidebar-toggle i").click();
+				});
+				$("#right-panel-img").on("mouseup", function (e) {
+					annotations.push([e.offsetX, e.offsetY]);
+				});
+				$(".sidebar-link").on('click', function (el) {
+					clearAnnotations(true);
+					saveLinkInStorage(el);
+					$("#right-panel-img").removeClass("greyscale");
+					$(".link-selected").removeClass('link-selected');
+					$(".page-header").text($(this).text().substr($(this).text().indexOf(".") + 1));
+					var surah_img = $(this).data("right-panel-img");
+					$(".content-panel img").attr("src", surah_img);
+					$(this).addClass('link-selected');
+				});
+			});
+		}(jQuery))
+	</script>
+	<style>
+		.autocomplete-suggestions {
+			border: 1px solid #999;
+			background: #FFF;
+			overflow: auto;
+		}
+
+		.autocomplete-suggestion {
+			padding: 7px 10px;
+			white-space: nowrap;
+			overflow: hidden;
+		}
+
+		.autocomplete-selected {
+			background: #F0F0F0;
+		}
+
+		.autocomplete-suggestions strong {
+			font-weight: normal;
+			color: #3399FF;
+		}
+
+		.autocomplete-group {
+			padding: 2px 5px;
+		}
+
+		.autocomplete-group strong {
+			display: block;
+			border-bottom: 1px solid #000;
+		}
+
+		#sidebar .sidebar-item .sidebar-link.link-selected {
+			background-color: #7e348a;
+			color: white;
+			font-weight: 600;
+		}
+
+		.main {
+			background-color: #E2E8DD;
+		}
+
+		#right-panel-img {
+			border-radius: 1px;
+			box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+		}
+
+		.right-panel-card {
+			background-color: #F6F4D2;
+			padding: 30px 50px 50px 50px;
+			box-shadow: rgba(0, 0, 0, 0.2) 0px 60px 40px -7px;
+		}
+
+		.right-panel-card .card-header {
+			padding-top: 0;
+			padding-bottom: 30px;
+			background-color: transparent;
+		}
+
+		.greyscale {
+			-webkit-filter: grayscale(100%);
+			/* Safari 6.0 - 9.0 */
+			filter: grayscale(100%);
+		}
+
+		.actividad-number-circle {
+			background-color: rgba(255, 0, 0, 0.8);
+			height: 20px;
+			border: 2px solid rgb(255, 112, 2);
+			-moz-border-radius: 50%;
+			-webkit-border-radius: 50%;
+			width: 20px;
+			position: absolute;
+			margin-top: 5px;
+			margin-right: 3px;
+			line-height: 15px;
+			color: #ffffff;
+			font-size: 13px;
+			font-weight: 700;
+			text-align: center;
+			font-family: "Lato", sans-serif;
+		}
+
+		.actividad-number-circle.pulsate {
+			-webkit-animation: pulsate 2000ms ease-out;
+			-webkit-animation-iteration-count: infinite;
+			-moz-animation: pulsate 2000ms ease-out;
+			-moz-animation-iteration-count: infinite;
+		}
+
+		.actividad-number-circle.pulsateExt {
+			-webkit-animation: pulsateExt 2000ms ease-out;
+			-webkit-animation-iteration-count: infinite;
+			-moz-animation: pulsateExt 2000ms ease-out;
+			-moz-animation-iteration-count: infinite;
+		}
+
+		#sidebar,
+		#sidebar .sidebar-content,
+		#sidebar .sidebar-link,
+		#sidebar a.sidebar-link {
+			background-color: #3C1742;
+		}
+
+		@-webkit-keyframes pulsate {
+			0% {
+				-webkit-transform: scale(1.0, 1.0);
+				opacity: 0.0;
+			}
+
+			25% {
+				opacity: 1.0;
+			}
+
+			75% {
+				-webkit-transform: scale(2.5, 2.5);
+				opacity: 0.0;
+			}
+
+			100% {
+				opacity: 0.0;
+			}
+		}
+
+		@-moz-keyframes pulsate {
+			0% {
+				-moz-transform: scale(1.0, 1.0);
+				opacity: 0.0;
+			}
+
+			25% {
+				opacity: 1.0;
+			}
+
+			75% {
+				-moz-transform: scale(2.5, 2.5);
+				opacity: 0.0;
+			}
+
+			100% {
+				opacity: 0.0;
+			}
+		}
+
+		@-webkit-keyframes pulsateExt {
+			0% {
+				opacity: 0.0;
+			}
+
+			25% {
+				-webkit-transform: scale(1.0, 1.0);
+				opacity: 0.0;
+			}
+
+			50% {
+				opacity: 1.0;
+			}
+
+			100% {
+				-webkit-transform: scale(2.5, 2.5);
+				opacity: 0.0;
+			}
+		}
+
+		@-moz-keyframes pulsateExt {
+			0% {
+				opacity: 0.0;
+			}
+
+			25% {
+				-moz-transform: scale(1.0, 1.0);
+				opacity: 0.0;
+			}
+
+			50% {
+				opacity: 1.0;
+			}
+
+			100% {
+				-moz-transform: scale(2.5, 2.5);
+				opacity: 0.0;
+			}
+		}
+
+		.annotations {
+			position: absolute;
+			z-index: auto;
+			top: 0;
+		}
+	</style>
+</body>
+
+</html>

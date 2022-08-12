@@ -1,0 +1,5 @@
+  ✔ Store the last clicked surah link in Localstorage and open same surah when application is opened @created(22-08-12 15:13) @done(22-08-12 21:32)
+  ■ Add drawing board @created(22-08-12 15:13)
+  ✔ Add toggle menu for showing annoatations and hiding them @created(22-08-12 15:13) @done(22-08-12 21:32)
+  ✔ Add icon to delete the annotations @created(22-08-12 15:13) @done(22-08-12 21:32)
+  ✔ Add searchbar on top. Use Typeahead and the DB should come from the array generated from the link's text, or meta data explicitly mentioned. @created(22-08-12 15:13) @done(22-08-12 21:32)
