@@ -136,7 +136,7 @@
 										<label class="form-check-label" for="showAnntations">Annotations</label>
 									</div>
 								</div>
-								<div class="col">
+								<div class="col search-field-container">
 									<div class="input-group">
 										<input type="text" class="form-control typeahead" placeholder="Search ..."
 											id="searchbox">
@@ -160,7 +160,7 @@
 									<h1 class="h3 mb-0 d-inline-flex justify-content-center page-header"></h1>
 								</div>
 								<div class="card-body pt-0 content-panel">
-									<img src="/img/1px.png" alt="Surah" id="right-panel-img" />
+									<img src="/img/1px.png" class="img-fluid" alt="Surah" id="right-panel-img" />
 									<div class="annotations-container">
 
 									</div>
@@ -291,6 +291,8 @@
 			background: #FFF;
 			overflow: auto;
 		}
+
+		
 
 		.autocomplete-suggestion {
 			padding: 7px 10px;
@@ -473,6 +475,35 @@
 			z-index: auto;
 			top: 0;
 		}
+
+		@media (max-width: 575.98px) { 
+			.right-panel-card{
+				padding:0;
+				background-color: transparent;
+			}
+			.card-body{
+				padding:0
+			}
+			#right-panel-img{
+				box-shadow: none;
+			}
+			.right-panel-card .card-header{
+				padding:3px 0 4px 0px;
+			}
+			.row > .col{
+				padding:0
+			}
+			.content{
+				padding-top: .5rem;
+			}
+			.search-field-container{
+				margin-right: .75rem;
+			}
+			.form-switch{
+				padding-left: 4.5rem;
+			}
+		}
+
 	</style>
 </body>
 
