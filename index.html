@@ -106,6 +106,7 @@
 						Tajweed
 					</li>
 
+					<li class="sidebar-item"><a class="sidebar-link" href="#" data-right-panel-img="/img/tajweed.png">তাজউইদ চার্ট</a></li>
 					<li class="sidebar-item"><a class="sidebar-link" href="#">ইকফা হরফ</a></li>
 					<li class="sidebar-item"><a class="sidebar-link" href="#">ইজহার এর হরফ</a></li>
 					<li class="sidebar-item"><a class="sidebar-link" href="#">ক্বলক্বলার হরফ</a></li>
@@ -162,7 +163,6 @@
 								<div class="card-body pt-0 content-panel">
 									<img src="/img/1px.png" class="img-fluid" alt="Surah" id="right-panel-img" />
 									<div class="annotations-container">
-
 									</div>
 								</div>
 							</div>
@@ -175,9 +175,8 @@
 	</div>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 	<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/typeahead.js/0.10.3/typeahead.bundle.min.js"></script>-->
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.devbridge-autocomplete/1.4.11/jquery.autocomplete.min.js"
-		integrity="sha512-uxCwHf1pRwBJvURAMD/Gg0Kz2F2BymQyXDlTqnayuRyBFE7cisFCh2dSb1HIumZCRHuZikgeqXm8ruUoaxk5tA=="
-		crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.devbridge-autocomplete/1.4.11/jquery.autocomplete.min.js"></script>
+	
 	<script src="js/app.js"></script>
 	<script src="js/jquery.hotkeys.js"></script>
 	<script>
@@ -242,12 +241,12 @@
 				})
 			}
 			$(document).ready(function () {
-				navigateLastVisited();				
+				navigateLastVisited();
 				init_autocomplete_db();
 				$("#showAnnotations").on("change", function () {
-					if($("#showAnnotations").is(':checked')){
+					if ($("#showAnnotations").is(':checked')) {
 						plotAnnotations();
-					}else{
+					} else {
 						clearAnnotations();
 					}
 				})
@@ -275,12 +274,22 @@
 				$(".sidebar-link").on('click', function (el) {
 					clearAnnotations(true);
 					saveLinkInStorage(el);
+
 					$("#right-panel-img").removeClass("greyscale");
 					$(".link-selected").removeClass('link-selected');
 					$(".page-header").text($(this).text().substr($(this).text().indexOf(".") + 1));
+
 					var surah_img = $(this).data("right-panel-img");
-					$(".content-panel img").attr("src", surah_img);
+					var im = new Image();
+					im.onload = function () {
+						$("#right-panel-img").attr("src", im.src);
+					};
+					im.src = surah_img;
+
 					$(this).addClass('link-selected');
+					if ($(document).width() <= 576) {
+						$(".sidebar-toggle i").click();
+					}
 				});
 			});
 		}(jQuery))
@@ -292,7 +301,7 @@
 			overflow: auto;
 		}
 
-		
+
 
 		.autocomplete-suggestion {
 			padding: 7px 10px;
@@ -476,34 +485,40 @@
 			top: 0;
 		}
 
-		@media (max-width: 575.98px) { 
-			.right-panel-card{
-				padding:0;
+		@media (max-width: 575.98px) {
+			.right-panel-card {
+				padding: 0;
 				background-color: transparent;
 			}
-			.card-body{
-				padding:0
+
+			.card-body {
+				padding: 0
 			}
-			#right-panel-img{
+
+			#right-panel-img {
 				box-shadow: none;
 			}
-			.right-panel-card .card-header{
-				padding:3px 0 4px 0px;
+
+			.right-panel-card .card-header {
+				padding: 3px 0 4px 0px;
 			}
-			.row > .col{
-				padding:0
+
+			.row>.col {
+				padding: 0
 			}
-			.content{
+
+			.content {
 				padding-top: .5rem;
 			}
-			.search-field-container{
+
+			.search-field-container {
 				margin-right: .75rem;
 			}
-			.form-switch{
+
+			.form-switch {
 				padding-left: 4.5rem;
 			}
 		}
-
 	</style>
 </body>
 
